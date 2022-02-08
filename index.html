@@ -61,11 +61,13 @@
                 </div> -->
                 <div class="col-lg-3">
                     <div class="cls">
-                        <img :class="gender" v-bind:src="picture" alt="`{firstName} ${lastName}`" />
-                        <p>{{firstName}} {{lastName}}</h4>
+                        <br>
+                        <img id="ido" :class="gender" v-bind:src="picture" alt="`{firstName} ${lastName}`" />
+                        <br><br>
+                        <p class="fnm">{{firstName}} {{lastName}}</h4>
                         <p>{{email}}</p>
                         <p>{{gender}}</p>
-                        <button @click :class="gender" class="vbt">Get random user</button>
+                        <button @click="getUser" :class="gender" class="vbt">Get random user</button>
                     </div>
                 </div>
                 <!-- <div class="col-lg-3">
