@@ -8,13 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 <body>
     <div id="app">
-        <h4>{{firstName}}</h4>
+        <h4>{{firstName}} {{lastName}}</h4>
+        <h4>{{email}}</h4>
+        <h4>{{gender}}</h4>
+        <img v-bind:src="picture" alt="">
+        <button class="vbt">Get random user</button>
     </div>
-    <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
 </body>
 </html>
