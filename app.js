@@ -1,4 +1,7 @@
-const app = Vue.createApp({
-     template:'<h4>hey Kithinga we are here</h4>',
+const app = new Vue({
+     data(){
+          return{
+               firstName:'John',
+          }
+     },
 })
-app.mount('#app')
