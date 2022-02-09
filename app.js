@@ -4,16 +4,20 @@ const app = Vue.createApp({
       firstName: "Kithinga",
       lastName: "Mutuku",
       email: "kithinga@love.com",
-      gender: "female",
+      gender: "male",
       picture: "images/images.jpeg",
     };
   },
   methods:{
-    getUser(){
+    async getUser(){
+      const res = await fetch('https://randomuser.me/api')
+      const {results} = await res.json()
+      console.log(results)
+
       this.firstName = "Buelik",
       this.lastName = "Yong",
       this.email = "kithinga@love.com",
-      this.gender = "female",
+      this.gender = "male",
       this.picture = "images/images.jpeg",
       console.log("Welcome to vue development Mr. " + " "+ this.firstName);
     }
